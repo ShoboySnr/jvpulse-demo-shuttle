@@ -1,0 +1,19 @@
+[01-May-2020 16:47:54 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:47:58 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:48:00 UTC] PHP Warning:  file_get_contents(): SSL: Success in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:48:00 UTC] PHP Warning:  file_get_contents(): Failed to enable crypto in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:48:00 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: operation failed in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:48:04 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:48:30 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:48:42 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+ in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:49:02 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:49:09 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:49:13 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:49:22 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:49:37 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:52:37 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:53:59 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:55:08 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:55:15 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39
+[01-May-2020 16:59:05 UTC] PHP Warning:  file_get_contents(https://api.covid19api.com/summary): failed to open stream: HTTP request failed!  in /home/dexignla/testing/covid/script/covid.php on line 39

@@ -1,0 +1,49 @@
+.footer {
+    border-top: 1px solid lighten(#1b2a4e, 5%);
+    background: #1b2a4e;
+    padding   : 20px 0px;
+
+    &.dashboard {
+        background    : $dark;
+        // margin-left: 55px;
+        border-color  : $border-color;
+        position      : fixed;
+        bottom        : 0;
+        left          : 0;
+        right         : 0;
+    }
+
+    .copyright {
+        p {
+            margin   : 0;
+            font-size: 14px;
+            color    : lighten($body-color, 20%);
+
+            a {
+                color      : $white;
+                font-weight: 500;
+            }
+
+            @include respond('phone') {
+                text-align: center;
+            }
+        }
+    }
+
+    .footer-social {
+        text-align: right;
+
+        @include respond('phone') {
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                color  : lighten($body-color, 20%);
+                padding: 0px 10px;
+            }
+        }
+    }
+}

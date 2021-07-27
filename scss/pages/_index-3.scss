@@ -1,0 +1,131 @@
+.hero.banner-3{
+	background-image: url(./../images/hero/7.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	.hero-content{
+		p{
+			@include respond('tab-land'){
+				margin-bottom:10px;
+				
+			}
+		}
+		h3{
+			@include respond('tab-land'){
+				margin-bottom: 10px;
+				font-size: 20px;
+			}
+		}
+		h1 {
+			@include respond('tab-land'){
+				font-size: 38px;
+				font-weight: bold;
+				line-height: 45px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.row{
+		@include respond('tab-port'){
+			flex-direction: column-reverse;
+		}
+	}
+	.hero-img{
+		img{
+			@include respond('tab-port'){
+				max-width: 200px;
+				transform: scale(1);
+				-moz-transform: scale(1);
+				-webkit-transform: scale(1);
+				-ms-transform: scale(1);
+				-ms-transform: scale(1);
+			}
+		}
+	}
+}
+.counter-area{
+	display:flex;
+	align-items:center;
+	@include respond('tab-port'){
+		margin-top: 50px;
+	}
+	@include respond('phone-land'){
+		margin-top: 30px;
+	}
+	.count-miter-3 {
+		max-width:200px;
+		@include respond('tab-port'){
+			max-width: 50%;
+			flex: 0 0 50%;
+		}
+		.count-area{
+			background: $primary;
+			border-radius: 4px;
+			color: #fff;
+			text-align: right;
+			padding: 10px 30px;
+			margin-bottom: 30px;
+			position:relative;
+			@include respond('phone-land'){
+				padding:5px 15px;
+			    margin-bottom: 15px;	
+			}
+			span{
+				@include respond('phone-land'){
+					font-size:12px;
+				}
+			}
+			.count-box{
+				color: #fff;
+				line-height: 1;
+				margin: 0;
+				font-size: 35px;
+				font-weight: 600;
+				
+				@include respond('phone-land'){
+				    font-size: 24px;	
+				}
+				
+			}
+		}
+		.count-area:last-child{
+			margin-bottom:0;
+		}
+		.count-area:after{
+			content: "";
+			width: 15px;
+			height: 15px;
+			background: inherit;
+			position: absolute;
+			right: 0;
+			transform: rotate(45deg);
+			right: -5px;
+			top: 15px;
+		}
+		.death{
+			background:#ff5252;
+		}
+		.recover{
+			background:#76cc76;
+		}
+	}
+	.hero-img{ 
+		padding: 0 0px 0px 80px;
+		margin-top: 0;
+		@include respond('tab-land'){
+			padding-left:50px;
+		}
+		@include respond('phone-land'){
+			margin-top: 30px;
+		}
+	}
+	.hero-img img{ 
+		
+	}
+}
+@media screen and (max-width: 1200px) {
+	.profile-pic{
+		width: 100px;
+		float: none;
+	}
+}

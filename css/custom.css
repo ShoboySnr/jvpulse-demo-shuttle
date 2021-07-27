@@ -1,0 +1,268 @@
+a {
+  color: #f3522a;
+}
+
+a:hover {
+  color: #f3522a;
+  font-weight: bold;
+}
+
+#main-wrapper {
+  margin-top: 0;
+}
+
+.hero.banner-3 {
+  background-image: url('../images/jvpulse-shuttle.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-content h1,
+.hero-content p {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #f3522a;
+  border-color: #f3522a;
+}
+
+.btn-primary:hover {
+  background-color: #f3522a;
+  border-color: #f3522a;
+  opacity: 0.9;
+}
+
+.text-custom {
+  color: #f3522a;
+}
+
+.bottom {
+  background-color: #f3522a;
+}
+
+.footer {
+  border-top: 1px solid #f3522a;
+    background: #f3522a;
+    padding: 20px 0px;
+}
+
+.footer .copyright p {
+  color: #ffffff;
+}
+
+.popup {
+  margin-left: 10% !important;
+  width: 80%;
+  margin-right: 10%;
+  left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .popup {
+    width: 95%;
+    margin-left: 2.5% !important;
+    margin-right: 2.5%;
+  }
+}
+
+.p_content {
+  height: 100%;
+  padding: 45px;
+}
+
+@media screen and (max-width: 992px) {
+  .p_content {
+    padding: 10px;
+  }
+}
+
+.js__p_close {
+  right: 20px;
+  top: 20px;
+}
+
+.popup:not(.js__slide_top) {
+  height: 90vh;
+  max-height: 800px;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  overflow-y: scroll;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 992px) {
+  #regForm {
+    padding: 20px 15px;
+  }
+}
+
+#regForm h1,
+#how-it-works h1 {
+  font-size: 25px;
+  color: #000;
+}
+
+/* Style the input fields */
+#regForm input {
+  padding: 10px;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+}
+
+#regForm input:hover,
+#regForm input:active,
+#regForm input:focus {
+  border-bottom: 1px solid #000;
+  border-color: #000;
+}
+
+/* Mark input boxes that gets an error on validation: */
+#regForm input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+#regForm .tab {
+  text-align: left;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+#regForm .tab label {
+  font-size: 17px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+#regForm .tab small {
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+}
+
+/* Make circles that indicate the steps of the form: */
+#regForm .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+#regForm .step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+#regForm .step.finish {
+  background-color: #04AA6D;
+}
+
+#submit-button {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #f3522a;
+  border-color: #f3522a;
+}
+
+.error {
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+#success-message {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#success-message .icon-header {
+  width: 100%;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.spread-content ul li i {
+  background: #f3522a;
+}
+
+.cta .cta-content .cta-call {
+  cursor: pointer;
+  background-color: #f3522a;
+  text-align: center;
+  margin-top: 0;
+}
+
+.cta .cta-content .cta-call span {
+  background: #f3522a;
+  margin-right: 0;
+}
+
+.cta .cta-content .cta-call a {
+  width: 100%;
+}
+
+.cta {
+  padding: 40px 0;
+}
+
+.how-spread {
+  background-image: url('../images/signup-process.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-spread .spread-content,
+.how-spread .section-title h2,
+.how-spread .spread-content ul li,
+.how-spread .spread-content ul li b {
+  color: #ffffff;
+}
+
+.how-spread .section-padding {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100%;
+}
+
+.banner-3 .banner-bg {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100vw;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.success-text,
+.success-text h1 {
+  color: #000;
+}

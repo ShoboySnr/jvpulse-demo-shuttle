@@ -1,0 +1,55 @@
+
+.qurantine-content{
+    margin-top: 50px;
+    background: $light;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 310px;
+    text-align: center;
+    @include respond('tab-land'){
+        min-height: 350px;
+    }
+    @include respond('phone-land'){
+        min-height: auto;
+    }
+    img{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        // background: $white;
+        // border-radius: 100px;
+        // padding: 10px;
+        max-width: 75px;
+    }
+    h4{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.if-symptom{
+    // background: $primary;
+}
+
+
+.if-symptom-content{
+    margin-top: 50px;
+    text-align: center;
+    background: $light;
+    padding: 30px;
+    // min-height: 300px;
+    @include respond('tab-land'){
+        min-height: 270px;
+    }
+    img{
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        // background: $white;
+    }
+    h4{
+        line-height: 35px;
+    }
+}

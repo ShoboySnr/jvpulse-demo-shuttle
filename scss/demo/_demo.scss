@@ -1,0 +1,101 @@
+.demo_img {
+    text-align   : center;
+    margin-bottom: 60px;
+
+    .img-wrap {
+        // max-height: 175px;
+        overflow     : hidden;
+        margin-bottom: 15px;
+        box-shadow   : 0px 36px 48px rgba(31, 66, 135, 0.04);
+        background   : $primary;
+        padding      : 10px;
+        border-radius: 5px;
+        position     : relative;
+
+        &::after {
+            position  : absolute;
+            content   : '';
+            left      : 0;
+            right     : 0;
+            top       : 0;
+            bottom    : 0;
+            background: $primary;
+            opacity   : 0;
+        }
+
+        &.light {
+            background: $white;
+        }
+
+        &:hover,
+        &:focus {
+            &::after {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    img {
+        border-radius: 5px;
+    }
+}
+
+.intro-demo_img {
+    // box-shadow: 0px 20px 25px rgba(22, 28, 45, 0.05);
+    box-shadow   : 0px 36px 48px rgba(93, 120, 255, 0.25);
+    position     : relative;
+    overflow     : hidden;
+
+    // background: $primary;
+    // padding   : 10px;
+    img {
+        border-radius: 5px;
+    }
+
+    .dark-img {
+        position: absolute;
+        // top  : 45px;
+        // left : 50px;
+        width   : 90%;
+        right   : 0px;
+        bottom  : 0px;
+    }
+
+}
+
+
+
+.support-content {
+    text-align: center;
+
+    @include respond("phone-land") {
+        margin-bottom: 50px;
+    }
+
+    span {
+        i {
+            color    : $primary;
+            font-size: 36px;
+        }
+    }
+
+    h4 {
+        font-size    : 20px;
+        margin-top   : 30px;
+        margin-bottom: 15px;
+        text-overflow: ellipsis;
+        overflow     : hidden;
+        white-space  : nowrap;
+    }
+
+    p {
+        line-height: 27px;
+        max-width  : 350px;
+        margin     : 0 auto 30px;
+    }
+
+    a {
+        color    : $primary;
+        font-size: 14px;
+    }
+}

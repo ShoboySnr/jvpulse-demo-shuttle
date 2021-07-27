@@ -1,0 +1,34 @@
+.prepare {
+    position: relative;
+}
+
+.prepare-content {
+    // padding: 0 130px 115px;
+}
+
+.prepare-text {
+    margin-bottom: 45px;
+
+    h3 {
+        font-size    : 20px;
+        font-weight  : 500;
+        margin-bottom: 30px;
+        color        : #515184;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    li {
+        display: flex;
+
+        i {
+            line-height : 30px;
+            margin-right: 15px;
+            font-size   : 13px;
+            color       : #AEAED5;
+        }
+    }
+
+}

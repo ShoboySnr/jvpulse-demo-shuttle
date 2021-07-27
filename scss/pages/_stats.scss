@@ -1,0 +1,538 @@
+#vmap {
+	width: 100%;
+	height: 430px;
+	padding: 0;
+	margin: 0;
+	@include respond('tab-land'){
+		height: 390px;
+	}
+	@include respond('phone'){
+		height: 250px;
+	}
+}
+#main-wrapper.stats-area{
+	z-index:unset;
+}
+.stats-modal{
+	.chartjs-size-monitor{
+		margin-bottom:30px;
+	}
+}
+.updated-time{
+	@include respond('phone'){
+		margin-right: -8px;
+		margin-left: -8px;
+	}
+	.col-6{
+		@include respond('phone'){
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+	}
+}
+
+.prepare-content {
+    text-align   : center;
+    margin-top   : 30px;
+    background   : $light;
+    padding      : 30px 20px 20px;
+    border-radius: 5px;
+    span {
+        width        : 100px;
+        height       : 100px;
+        border       : 5px solid $light;
+        border-radius: 100px;
+        margin       : 0 auto;
+        padding      : 5px;
+        display      : inline-block;
+        // background   : $white;
+        // box-shadow   : 0px 10px 20px rgba(34, 32, 76, 0.1);
+        margin-bottom: 15px;
+
+        img {
+            width        : 100%;
+            // border-radius: 100px;
+        }
+    }
+    h4 {
+        margin-bottom: 15px;
+    }
+}
+.covid-widget-1 {
+    background: #fff;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 0 rgba(38, 57, 52, 0.15);
+    border-left: 5px solid;
+	z-index: 1;
+	@include respond('tab-land'){
+	    padding: 12px 15px 15px 15px;
+	}
+	@include respond('phone'){
+	    margin-bottom: 15px;
+	}
+	.icon{
+		width: 140px;
+		height: 140px;
+		position: absolute;
+		right: -30px;
+		top: -30px;
+		line-height: 60px;
+		color: #fff;
+		font-size: 20px;
+		opacity: 0.1;
+		img{
+			width:100%;
+		}
+	}
+	.info{
+		h5{
+			font-family:$font-family-base;
+			font-size: 18px;
+			font-weight: 500;
+			color: #000;
+			margin: -15px -20px 10px -20px;
+			padding: 15px 20px;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			@include respond('tab-land'){
+				font-size: 15px;
+				padding: 12px 15px;
+				margin: -12px -15px 10px -15px;
+			}
+			@include respond('phone'){
+				font-size: 13px;
+			}
+		}
+		h3{
+			font-size: 40px;
+			margin-bottom: 0;
+			color: #000;
+			@include respond('tab-land'){
+			    font-size: 35px;
+			}
+			@include respond('phone'){
+				font-size: 30px;
+				line-height: 1;
+			}
+		}
+	}
+}
+.blue-bx  {border-color:#2c6dff;}
+.orange-bx{border-color:#ff6a07;}
+.defult-bx{border-color:$primary;}
+.red-bx   {border-color:#ff0000;}
+.green-bx {border-color:#82c519;}
+.redark-bx{border-color:#b70202;}
+#VMAP_CoronaUpdates #vmap{
+	background: #fff;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  0 10px 30px 0 rgba(38, 57, 52, 0.15);
+    z-index: 1;
+	@include respond('phone'){
+		margin-bottom: 15px;
+	}
+}
+.country-stat{
+	margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+	@include respond('phone'){
+		flex-wrap: wrap;
+	}
+	.country-select-box{
+		@include respond('phone'){
+			width:100%;
+			margin-bottom:15px;
+		}
+	}
+	
+	.nice-select{
+		font-size: 18px;
+		border-radius: 0 !important;
+		height: 50px;
+		padding: 8px 25px;
+		color: #000;
+		font-weight: 500;
+		width: 300px;
+		box-shadow:  0 10px 30px 0 rgba(38, 57, 52, 0.15);
+		
+		:after{
+			font-size:18px;
+			color:#000;
+		}
+		@include respond('phone'){
+			width: 100%;
+		}
+	}
+	.updateOn{
+		color:#000;
+		font-weight:600;
+		font-size:18px;		
+		@include respond('phone'){
+			width:100%;
+			margin-bottom:0;
+			text-align:center;
+			font-size:15px;
+		}
+	}
+}
+.jqvmap-zoomin, 
+.jqvmap-zoomout {
+	position: absolute;
+    left: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: $primary;
+    padding: 0;
+    color: white;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    line-height: 10px;
+    text-align: center;
+    line-height: 22px;
+}
+.jqvmap-zoomin {
+	top: 15px;
+}
+.jqvmap-zoomout {
+    top: 40px;
+}
+.all-country-stat{
+	background:#fff;
+	box-shadow:  0 10px 30px 0 rgba(38, 57, 52, 0.15);
+	@include respond('tab-port'){
+		flex-wrap: wrap;
+	}
+	.col{
+		border-right: 1px solid rgba(0, 0, 0, 0.1);
+		@include respond('tab-port'){
+			flex: 0 0 33.33%;
+		}
+		@include respond('phone'){
+			flex: 0 0 50%;
+			max-width:50%;
+		}
+	}
+	.col:nth-child(4),
+	.col:last-child{
+		@include respond('tab-port'){
+			flex: 0 0 50%;
+			border-top: 1px solid rgba(0,0,0,0.1);
+		}
+	}
+	.col:nth-child(3){
+		@include respond('phone'){
+			border-top: 1px solid rgba(0,0,0,0.1);
+		}
+	}
+	.col:last-child{
+		@include respond('phone'){
+			flex: 0 0 100%;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	.icon-box{
+		display: flex;
+		align-items: center;
+		padding: 20px 0px;
+		
+		.icon{
+			width:60px;
+			margin-right: 10px;
+			@include respond('tab-land'){
+				width:50px;
+			}
+			img{
+				width:100%;
+			}
+			
+		}
+		.info{
+			width:100%;
+			h5{
+				font-family:$font-family-base;
+				font-size:14px;
+				margin-bottom:5px;
+				@include respond('tab-land'){
+				    font-size: 12px;
+				}
+			}	
+			h3{
+				font-size: 30px;
+				margin-bottom: 0;
+				@include respond('tab-land'){
+					font-size: 22px;
+				}	
+			}
+		}
+	}
+	.col:last-child{
+		border-right:0;
+	}
+}
+.country-picker{
+	.list{
+		margin: 0;
+		background: #fff;
+		border-radius: 0;
+		border: 0;
+		height: 50vh;
+		overflow-y: scroll;
+		box-shadow: 0 20px 30px 0 rgba(38, 57, 52, 0.1);
+		
+		li{
+			font-size: 14px;
+			min-height: auto;
+			line-height: 1.5;
+			padding: 8px 20px;
+		}
+		.option:hover,
+		.option.selected, 
+		.option.focus, 
+		.option.selected.focus{
+			color:#000;
+			background:#eee;
+		}
+	}
+}
+
+// Data Table
+
+table.dataTable.stripe tbody tr.odd, 
+table.dataTable.display tbody tr.odd {
+    background-color: $light;
+}
+table.dataTable.display tbody tr.even>.sorting_1, 
+table.dataTable.order-column.stripe tbody tr.even>.sorting_1,
+table.dataTable.display tbody tr.odd>.sorting_1, 
+table.dataTable.order-column.stripe tbody tr.odd>.sorting_1{
+	background:rgba(54, 57, 174, 0.1);
+}
+table.dataTable.hover tbody tr:hover, 
+table.dataTable.display tbody tr:hover{
+	background:rgba(54, 57, 174, 0.15);
+}
+table.dataTable thead th, 
+table.dataTable tfoot th {
+    font-weight: 600;
+    color: #121158;
+    white-space: nowrap;	
+}
+.dataTable{
+	@include respond('tab-land'){
+		overflow-x: scroll;
+		display: block;
+	}	
+}
+
+// pagination
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+	background:$primary;
+	color:#fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	min-width: 40px;
+    border: 0 !important;
+    height: 40px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+table.dataTable thead th, 
+table.dataTable thead td,
+table.dataTable.no-footer {
+    border-bottom: 1px solid #ccc;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 10px 15px;
+    max-width: 150px;
+}
+.dataTables_length select{
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 5px 15px;
+    margin: 0 10px;
+}
+.stat-head{
+	font-size: 18px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+	font-family:$font-family-base;
+}
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate{
+    padding-top: 20px;
+}
+
+
+// TopCountryStats
+
+#TopCountryStats{
+	@include respond('phone'){
+		margin-right: -8px;
+		margin-left: -8px;
+	}
+	.col-6{
+		@include respond('phone'){
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+	}
+	h4{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.item{
+		background: #fff;
+		box-shadow:  0 10px 30px 0 rgba(38, 57, 52, 0.15);
+		display: block;
+		padding: 10px 10px 10px 55px;
+		position: relative;
+		color:#121158;
+		margin-bottom: 15px;
+		@include respond('tab-land'){
+			padding: 10px 10px 10px 42px;
+		}
+		
+		img{
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			object-fit: cover;
+			left: 15px;
+			top: 50%;
+			margin-top: -15px;
+			border-radius: 30px;
+			@include respond('tab-land'){
+			    width: 25px;
+				height: 25px;
+				left: 10px;
+				top: 50%;
+				margin-top: -12px;
+			}
+		}
+		span{
+			display: block;
+			width: 100%;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 1;
+			margin-bottom: 5px;
+		}
+		span:last-child{
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+	}
+}
+// corona-update-in-tab
+.covid-world-widget .covid-widget-1 {
+    box-shadow:  0 10px 30px 0 rgba(38, 57, 52, 0.15);
+
+}
+.corona-update-in-tab{
+	border: 1px solid #ccc;
+    padding: 0 30px;
+	
+	@include respond('phone'){
+		padding: 0 15px;
+	}
+	
+	.nav-tabs{
+		margin: 0 -30px 50px -30px;
+		border-bottom: 1px solid #ccc;
+		background:$light;
+		@include respond('tab-land'){
+			margin:0 -30px 30px -30px;
+		}
+		@include respond('phone'){
+			margin:0 -15px 15px -15px;
+		}
+		
+		li{
+			margin: 0;
+			border-right: 1px solid #ccc;
+			
+			a{
+				padding: 10px 15px;
+				font-size: 14px;
+				display: block;
+				font-weight: 600;
+				color: #000;
+				margin-bottom: -1px;
+				background: $light;
+				border-bottom: 1px solid #ccc;
+				@include respond('tab-land'){
+				    padding: 10px 10px;
+				}
+				
+				img{
+					width: 22px;
+					height: 16px;
+					border-radius: 2px;
+					margin-right: 8px;
+				}
+			}
+			.active{
+				border-bottom-color: #fff;
+				background:#fff;
+			}
+		}
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
